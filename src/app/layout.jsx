@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   weight: ["300", "400", "500"],
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className} bg-light text-dark`}>
         <Navbar />
         {children}
-        <Footer/>
       </body>
     </html>
   );
