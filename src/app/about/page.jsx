@@ -1,12 +1,17 @@
+import AnimatedNumbers from "@/components/AnimatedNumbers";
 import AnimatedText from "@/components/AnimatedText";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
+import Image from "next/image";
 import React from "react";
 
 export default function about() {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center mb-16">
         <div className="w-full h-full inline-block z-0 px-32 pt-16">
-          <AnimatedText text="Passion Fuel Purpose!" styles="text-6xl mb-16" />
+          <AnimatedText text="Passion Fuel Purpose!" styles="text-8xl mb-16" />
 
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
@@ -44,7 +49,47 @@ export default function about() {
                 digital transformation.
               </p>
             </div>
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 custom-shadow">
+              <div className="">
+                <Image
+                  src={"/bgphoto.png"}
+                  alt="Profile Photo DM"
+                  width={500}
+                  height={500}
+                  className="rounded-2xl"
+                />
+              </div>
+            </div>
+            <div className="col-span-2 flex flex-col items-end justify-between">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={10} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Satisfied Clients
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={30} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Projects Completed
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={4} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Years of Experience
+                </h2>
+              </div>
+            </div>
           </div>
+          <Skills />
+          <Experience/>
+          <Education/>
         </div>
       </main>
     </>

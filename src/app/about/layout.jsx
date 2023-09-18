@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-
+import "./styles.css";
 
 export const metadata = {
   title: "Derick Maitland | About Me",
