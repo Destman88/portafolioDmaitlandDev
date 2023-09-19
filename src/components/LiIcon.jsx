@@ -5,6 +5,8 @@ const LiIcon = ({ reference }) => {
     target: reference,
     offset: ["center end", "center center"],
   });
+
+  const pathLength = scrollYProgress;
   return (
     <figure className="absolute left-0 stroke-dark">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
@@ -19,7 +21,7 @@ const LiIcon = ({ reference }) => {
           cy="50"
           r="20"
           className=" stroke-[5px] fill-light"
-          style={{ pathLength: scrollYProgress }}
+          style={{ pathLength }}
         />
         <circle
           cx="75"
