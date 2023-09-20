@@ -23,7 +23,7 @@ export default function Home() {
           <div className="flex flex-col items-center self-center px-16">
             <AnimatedText
               text="I'm Derick Maitland. A passionate web developer in training."
-              styles="text-6xl text-left"
+              styles="text-6xl text-left darkModeText"
             />
             <p className="my-4 text-base font-medium ">
               My goal is to create amazing and effective web solutions that are
@@ -35,9 +35,7 @@ export default function Home() {
               <Link
                 href="/cvi.pdf"
                 target={"_blank"}
-                className=" flex items-center bg-primary text-light p-2.5 px-6 rounded-lg text-lg
-              font-medium hover:bg-secondary hover:text-primary border-2 border-solid border-transparent
-               hover:border-primary transition-all"
+                className=" flex items-center p-2.5 px-6 rounded-lg text-lg lightModeBtn darkModeBtn"
                 download="true"
               >
                 Resume <FaRegFilePdf className="w-6 ml-1" />
@@ -45,7 +43,8 @@ export default function Home() {
               <Link
                 href="mailto:derickmaitland@dmaitlanddev.com"
                 target={"_blank"}
-                className="flex items-center ml-4 text-lg font-medium capitalize text-primary underline underline-offset-2 "
+                className="flex items-center ml-4 text-lg font-medium capitalize text-primary underline underline-offset-2 
+                hover:text-auxiliarPurple dark:text-secondary dark:hover:text-light"
               >
                 Contact me <FaEnvelopeOpenText className="w-6 ml-1" />
               </Link>
@@ -54,7 +53,7 @@ export default function Home() {
         </div>
         <HireMe />
       </div>
-      <footer className="w-full font-medium text-lg bg-light fixed bottom-0 left-0">
+      <footer className="w-full font-medium text-lg bg-light fixed bottom-0 left-0 dark:bg-dark dark:text-white">
         <div className="px-10 flex items-center justify-between">
           <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
           <div className="flex items-center">
@@ -63,7 +62,7 @@ export default function Home() {
             by&nbsp;
             <Link
               href="https://dmaitlanddev.com/"
-              className="underline underline-offset-2"
+              className="underline underline-offset-2 hover:text-auxiliarPurple dark:hover:text-secondary "
             >
               Dmaitland Dev
             </Link>

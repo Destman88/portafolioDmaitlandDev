@@ -47,7 +47,7 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: "#230450",
+            value: "#9d49f6",
           },
           links: {
             color: "#ffb502",

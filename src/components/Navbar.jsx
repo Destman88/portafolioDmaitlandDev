@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Logo from "./Logo";
+import { SunIcon, MoonIcon } from "./Icons";
 import { usePathname } from "next/navigation";
 import {
   FaGithub,
@@ -12,6 +13,8 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
+import LogoLight from "./LogoLight";
 
 const CustomLink = ({ href, title, styles = "" }) => {
   const path = usePathname();
@@ -21,7 +24,9 @@ const CustomLink = ({ href, title, styles = "" }) => {
       {title}
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full
-      transition-[width] ease duration-300 ${path === href ? "w-full" : "w-0"}`}
+      transition-[width] ease duration-300 ${
+        path === href ? "w-full" : "w-0"
+      } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -30,6 +35,7 @@ const CustomLink = ({ href, title, styles = "" }) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
@@ -93,9 +99,17 @@ const Navbar = () => {
         >
           <FaYoutube />
         </motion.a>
+
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
+        {mode === "dark" ? <LogoLight /> : <Logo />}
       </div>
     </header>
   );
