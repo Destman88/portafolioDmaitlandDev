@@ -22,6 +22,8 @@ const Logo = () => {
           height={50}
           alt="logo Dmaitland Dev"
           src={"/logo.png"}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
         />
       </MotionLink>
     </div>

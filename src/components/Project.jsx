@@ -10,7 +10,7 @@ const Project = ({ type, title, img, link, github }) => {
   return (
     <article
       className=" w-full flex flex-col items-center justify-center rounded-2xl 
-    border border-solid border-dark bg-light shadow-2xl p-6 relative custom-shadow "
+    border border-solid border-dark bg-light p-6 relative  imgBorderLight imgBorderDark "
     >
       <Link
         href={link}
@@ -23,10 +23,14 @@ const Project = ({ type, title, img, link, github }) => {
           className=" w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
         />
       </Link>
       <div className=" w-full flex flex-col items-center justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-secondary">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -41,9 +45,7 @@ const Project = ({ type, title, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-primary text-light p-2 px-6 text-lg 
-            hover:bg-secondary hover:text-primary border-2 border-solid border-transparent
-            hover:border-primary transition-all font-medium"
+            className="ml-4 rounded-lg p-2 px-6 text-lg lightModeBtn darkModeBtn"
           >
             Visit
           </Link>

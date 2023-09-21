@@ -30,6 +30,25 @@ module.exports = {
         cusDark: "9px 10px 0px 4px rgb(255, 255, 255)",
       },
     },
+    screens: {
+      "sc-2xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+
+      "sc-xl": { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      "sc-lg": { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      "sc-md": { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      "sc-sm": { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      "sc-xs": { max: "479px" },
+      // => @media (max-width: 479px) { ... }
+    },
   },
   plugins: [],
 };

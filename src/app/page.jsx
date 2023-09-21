@@ -18,6 +18,8 @@ export default function Home() {
               width={500}
               height={600}
               className="w-full h-full"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              priority
             />
           </div>
           <div className="flex flex-col items-center self-center px-16">

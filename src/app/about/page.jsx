@@ -57,6 +57,8 @@ export default function about() {
                   width={500}
                   height={500}
                   className="rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                  priority
                 />
               </div>
             </div>
