@@ -48,7 +48,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.facebook.com/dmaitlanddev"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >
@@ -57,7 +57,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.instagram.com/dmaitland_dev/"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >
@@ -66,7 +66,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.linkedin.com/in/derickmaitland88/"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >
@@ -75,7 +75,7 @@ const Navbar = () => {
         <motion.a
           href="https://github.com/Destman88"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >
@@ -84,7 +84,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.tiktok.com/@dmaitland_dev?lang=es"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >
@@ -93,7 +93,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.youtube.com/channel/UCjnf5W54PpG56fSJRLf01_w"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -5 }}
           whileTap={{ scale: 0.9 }}
           className="w-6"
         >

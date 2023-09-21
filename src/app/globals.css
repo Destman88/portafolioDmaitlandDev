@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-  .darkModeBg{
-    @apply dark:bg-dark dark:text-white
+  .darkModeBg {
+    @apply dark:bg-dark dark:text-white;
   }
 
-  .lightModeBg{
-    @apply bg-light text-dark
+  .lightModeBg {
+    @apply bg-light text-dark;
   }
 
   .darkModeText {
@@ -20,14 +20,16 @@
     hover:bg-secondary hover:text-primary hover:font-bold hover:border-primary transition-all;
   }
 
+  .imgBorderLight {
+    @apply border-2 border-solid border-dark bg-light shadow-cusLig;
+  }
+
+  .imgBorderDark {
+    @apply dark:border-2 dark:border-solid dark:border-light dark:bg-dark dark:shadow-cusDark ;
+  }
+
   .darkModeBtn {
     @apply dark:font-medium dark:border-2 dark:border-solid dark:border-transparent dark:bg-secondary dark:text-primary 
     dark:hover:bg-auxiliarPurple dark:hover:text-light dark:hover:font-medium dark:hover:border-light dark:transition-all;
   }
-}
-
-.custom-shadow {
-  box-shadow: 9px 10px 0px 4px rgb(0, 0, 0);
-  -webkit-box-shadow: 9px 10px 0px 4px rgb(0, 0, 0);
-  -moz-box-shadow: 9px 10px 0px 4px rgb(0, 0, 0);
 }

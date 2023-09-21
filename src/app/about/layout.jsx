@@ -12,7 +12,7 @@ export default function aboutLayout({ children }) {
   return (
     <>
       {children}
-      <div className="w-full font-medium text-lg bg-light">
+      <div className="w-full font-medium text-lg lightModeBg darkModeBg">
         <Footer />
       </div>
     </>

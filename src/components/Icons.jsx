@@ -589,3 +589,26 @@ export const SpinLogo = (props) => (
     />
   </svg>
 );
+
+export const UpIcon = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    width={44}
+    height={44}
+    fill="0A0A30"
+    {...props}
+  >
+    <style>
+      {"\n    @keyframes slide-20{to{transform:translateY(-2px)}}\n  "}
+    </style>
+    <path
+      fill="#0A0A30"
+      d="M18.215 13.484a.857.857 0 11-1.098 1.317l-4.594-3.828L7.93 14.8a.857.857 0 11-1.097-1.317l5.131-4.276a.854.854 0 011.12 0l5.132 4.276z"
+      style={{
+        animation:
+          "slide-20 1s infinite alternate both cubic-bezier(1,-.01,0,.98)",
+      }}
+    />
+  </svg>
+);

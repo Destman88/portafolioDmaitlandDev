@@ -11,7 +11,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className=" w-full flex items-center justify-between rounded-3xl 
-    border border-solid border-dark bg-light p-12 custom-shadow "
+    border border-solid border-dark bg-light p-12 imgBorderLight imgBorderDark "
     >
       <Link
         href={link}
@@ -27,7 +27,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
       <div className=" w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-secondary">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -35,7 +37,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className=" mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <FaGithub className=" text-4xl" />
@@ -43,9 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-primary text-light p-2 px-6 text-lg 
-            hover:bg-secondary hover:text-primary border-2 border-solid border-transparent
-            hover:border-primary transition-all font-medium"
+            className="ml-4 rounded-lg p-2 px-6 text-lg lightModeBtn darkModeBtn"
           >
             Visit Project
           </Link>

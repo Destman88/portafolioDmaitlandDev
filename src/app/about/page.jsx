@@ -15,7 +15,7 @@ export default function about() {
 
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 darkModeText">
                 Biography
               </h2>
               <p className="mb-4 font-medium">
@@ -49,7 +49,7 @@ export default function about() {
                 digital transformation.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 custom-shadow">
+            <div className="col-span-3 relative h-max rounded-2xl p-8 imgBorderLight imgBorderDark">
               <div className="">
                 <Image
                   src={"/bgphoto.png"}
@@ -65,7 +65,7 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Satisfied Clients
                 </h2>
               </div>
@@ -73,7 +73,7 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={30} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Projects Completed
                 </h2>
               </div>
@@ -81,15 +81,15 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Years of Experience
                 </h2>
               </div>
             </div>
           </div>
           <Skills />
-          <Experience/>
-          <Education/>
+          <Experience />
+          <Education />
         </div>
       </main>
     </>

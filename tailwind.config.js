@@ -22,6 +22,12 @@ module.exports = {
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px);",
+        circularDark:
+          "repeating-radial-gradient(rgba(255, 255, 255,0.4) 2px,#15101C 8px, #15101C 100px);",
+      },
+      boxShadow: {
+        cusLig: "9px 10px 0px 4px rgb(0, 0, 0)",
+        cusDark: "9px 10px 0px 4px rgb(255, 255, 255)",
       },
     },
   },
