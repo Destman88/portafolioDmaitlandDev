@@ -32,4 +32,8 @@
     @apply dark:font-medium dark:border-2 dark:border-solid dark:border-transparent dark:bg-secondary dark:text-primary 
     dark:hover:bg-auxiliarPurple dark:hover:text-light dark:hover:font-medium dark:hover:border-light dark:transition-all;
   }
+
+  .containerResponsive{
+    @apply sc-xl:p-24 sc-lg:p-16 sc-md:p-12 sc-sm:p-8
+  }
 }

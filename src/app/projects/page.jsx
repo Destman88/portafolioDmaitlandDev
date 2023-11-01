@@ -6,10 +6,10 @@ export default function project() {
   return (
     <>
       <main className=" w-full mb-16 flex flex-col items-center justify-center">
-        <div className=" w-full h-full inline-block z-0 px-32 pt-16">
+        <div className=" w-full h-full inline-block z-0 px-32 pt-16 containerResponsive">
           <AnimatedText
             text="Imagination Trumps Knowledge!"
-            styles="text-8xl mb-16"
+            styles="text-8xl mb-16 sc-lg:text-7xl sc-sm:text-6xl sc-xs:text-4xl sc-sm:mb-8"
           />
           <div className=" grid grid-cols-12 gap-24">
             <div className=" col-span-12">

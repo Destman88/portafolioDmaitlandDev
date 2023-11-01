@@ -24,6 +24,18 @@ module.exports = {
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px);",
         circularDark:
           "repeating-radial-gradient(rgba(255, 255, 255,0.4) 2px,#15101C 8px, #15101C 100px);",
+        circularLightLg:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 80px);",
+        circularDarkLg:
+          "repeating-radial-gradient(rgba(255, 255, 255,0.4) 2px,#15101C 8px, #15101C 80px);",
+        circularLightMd:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 60px);",
+        circularDarkMd:
+          "repeating-radial-gradient(rgba(255, 255, 255,0.4) 2px,#15101C 6px, #15101C 60px);",
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 40px);",
+        circularDarkSm:
+          "repeating-radial-gradient(rgba(255, 255, 255,0.4) 2px,#15101C 4px, #15101C 40px);",
       },
       boxShadow: {
         cusLig: "9px 10px 0px 4px rgb(0, 0, 0)",

@@ -9,7 +9,7 @@ export default function articles() {
   return (
     <>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
-        <div className="w-full h-full inline-block z-0 px-32 pt-16">
+        <div className="w-full h-full inline-block z-0 px-32 pt-16 containerResponsive">
           <AnimatedText
             text="Words can change the world!"
             styles="text-8xl mb-16"

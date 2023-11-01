@@ -9,7 +9,7 @@ const LiIcon = ({ reference }) => {
   const pathLength = scrollYProgress;
   return (
     <figure className="absolute left-0 stroke-dark dark:stroke-white">
-      <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+      <svg className="-rotate-90 sc-md:w-[60px] sc-md:h-[60px] sc-xs:w-[40px] sc-xs:h-[40px]" width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"
           cy="50"

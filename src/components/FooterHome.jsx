@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="flex-col items-center w-full h-full">
       <ParticlesContainer />
-      <div className="w-full h-full inline-block z-0 sm:px-8 md:px-16 lg:px-32 containerResponsive pt-8 sc-md:pt-16 sc-sm:pt-8 ">
-        <div className="flex items-center justify-between w-full sc-lg:flex-col">
+      <div className="w-full h-full inline-block z-0 px-4 sm:px-8 md:px-16 lg:px-32 containerResponsive pt-8 sc-md:pt-16 sc-sm:pt-8">
+        <div className="flex items-center justify-between w-full flex-col lg:flex-row">
           <div className="w-1/2 sc-md:w-full">
             <Image
               src={photo}
@@ -27,7 +27,7 @@ export default function Home() {
               text="I'm Derick Maitland. A passionate web developer in training."
               styles="text-6xl text-left darkModeText sc-xl:text-5xl sc-lg:text-center sc-lg:text-6xl sc-md:text-5xl sc-sm:text-3xl"
             />
-            <p className="my-4 text-base font-medium sc-md:text-sm sc-sm:text-xs ">
+            <p className="my-4 text-base font-medium sc-md:text-sm sc-sm:text-xs">
               My goal is to create amazing and effective web solutions that are
               personalized to your unique needs. Ready to get started? Explore
               my portfolio and find out how I can help you stand out online –
@@ -37,8 +37,7 @@ export default function Home() {
               <Link
                 href="/cvi.pdf"
                 target={"_blank"}
-                className=" flex items-center p-2.5 px-6 rounded-lg text-lg lightModeBtn darkModeBtn 
-                sc-md:p-2 sc-md:px-4 sc-md:text-base"
+                className="flex items-center p-2.5 px-6 rounded-lg text-lg lightModeBtn darkModeBtn sc-md:p-2 sc-md:px-4 sc-md:text-base"
                 download="true"
               >
                 Resume <FaRegFilePdf className="w-6 ml-1" />
@@ -46,8 +45,7 @@ export default function Home() {
               <Link
                 href="mailto:derickmaitland@dmaitlanddev.com"
                 target={"_blank"}
-                className="flex items-center ml-4 text-lg font-medium capitalize text-primary underline underline-offset-2 
-                hover:text-auxiliarPurple dark:text-secondary dark:hover:text-light sc-md:text-base"
+                className="flex items-center ml-4 text-lg font-medium capitalize text-primary underline underline-offset-2 hover:text-auxiliarPurple dark:text-secondary dark:hover:text-light sc-md:text-base"
               >
                 Contact me <FaEnvelopeOpenText className="w-6 ml-1" />
               </Link>
@@ -65,7 +63,7 @@ export default function Home() {
             by&nbsp;
             <Link
               href="https://dmaitlanddev.com/"
-              className="underline underline-offset-2 hover:text-auxiliarPurple dark:hover:text-secondary "
+              className="underline underline-offset-2 hover:text-auxiliarPurple dark:hover:text-secondary"
             >
               Dmaitland Dev
             </Link>
@@ -74,7 +72,7 @@ export default function Home() {
         </div>
       </footer>
       <div className="hidden sc-md:block">
-        <Footer/>
+        <Footer />
       </div>
     </main>
   );
