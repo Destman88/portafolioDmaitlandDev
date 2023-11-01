@@ -11,12 +11,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className=" w-full flex items-center justify-between rounded-3xl 
-    border border-solid border-dark bg-light p-12 imgBorderLight imgBorderDark "
+    border border-solid border-dark bg-light p-12 imgBorderLight imgBorderDark 
+    sc-lg:flex-col sc-lg:p-8 sc-xs:p-4"
     >
       <Link
         href={link}
         target="_blank"
-        className=" w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg sc-lg:w-full"
       >
         <FramerImage
           src={img}
@@ -28,7 +29,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           priority
         />
       </Link>
-      <div className=" w-1/2 flex flex-col items-start justify-between pl-6">
+      <div className=" w-1/2 flex flex-col items-start justify-between pl-6 sc-lg:w-full">
         <span className="text-primary font-medium text-xl dark:text-secondary">
           {type}
         </span>

@@ -11,7 +11,7 @@ export default function project() {
             text="Imagination Trumps Knowledge!"
             styles="text-8xl mb-16 sc-lg:text-7xl sc-sm:text-6xl sc-xs:text-4xl sc-sm:mb-8"
           />
-          <div className=" grid grid-cols-12 gap-24">
+          <div className=" grid grid-cols-12 gap-24 sc-xl:gap-x-16 sc-lg:gap-x-8 sc-md:gap-y-24 sc-sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProject
                 title="Project1"

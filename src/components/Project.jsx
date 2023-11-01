@@ -9,8 +9,9 @@ const FramerImage = motion(Image);
 const Project = ({ type, title, img, link, github }) => {
   return (
     <article
-      className=" w-full flex flex-col items-center justify-center rounded-2xl 
-    border border-solid border-dark bg-light p-6 relative  imgBorderLight imgBorderDark "
+      className=" w-full flex items-center justify-center rounded-2xl 
+    border border-solid border-dark bg-light p-6 relative  imgBorderLight imgBorderDark 
+    sc-lg:flex-col sc-lg:p-8 sc-xs:p-4"
     >
       <Link
         href={link}

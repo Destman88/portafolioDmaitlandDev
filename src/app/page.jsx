@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main className="flex-col items-center w-full h-full">
       <ParticlesContainer />
-      <div className="w-full h-full inline-block z-0 sm:px-8 md:px-16 lg:px-32 containerResponsive pt-8 sc-md:pt-16 sc-sm:pt-8 ">
+      <div className="w-full h-full inline-block z-0 px-32 sc-sm:px-10 sc-md:px-16 sc-lg:px-32 containerResponsive pt-8 sc-md:pt-16 sc-sm:pt-8 ">
         <div className="flex items-center justify-between w-full sc-lg:flex-col">
           <div className="w-1/2 sc-md:w-full">
             <Image
               src={photo}
               alt="DmaitlandDev Profile"
-              className="w-[400px] sc-lg:hidden sc-md:inline-block sc-md:w-full sc-md:mb-4"
+              className="w-[400px] sc-lg:hidden sc-md:inline-block sc-md:w-full sc-md:mb-4 sc-sm:px-20 sc-md:px-32"
               sizes="(min-width: 808px) 50vw, 100vw"
               priority
             />
