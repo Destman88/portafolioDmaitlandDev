@@ -3,8 +3,10 @@ import { SpinLogo } from "./Icons";
 
 const HireMe = () => {
   return (
-    <div className="fixed z-20 right-10 bottom-20 flex items-center justify-center overflow-hidden 
-    sc-md:right-8 sc-md:left-auto sc-md:top-0 sc-md:bottom-auto sc-md:absolute">
+    <div
+      className="fixed z-20 right-10 bottom-20 flex items-center justify-center overflow-hidden 
+    sc-md:right-2 sc-md:left-auto sc-md:top-2 sc-md:bottom-auto sc-md:absolute"
+    >
       <div className="w-40 h-auto flex items-center justify-center relative sc-md:w-24 ">
         <SpinLogo className={"animate-spin-slow fill-dark dark:fill-light"} />
         <Link
