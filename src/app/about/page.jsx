@@ -3,6 +3,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
+import TransitionEffect from "@/components/TransitionEffect";
 import Image from "next/image";
 import React from "react";
 
@@ -10,9 +11,13 @@ export default function about() {
   return (
     <>
       <main className="flex w-full flex-col items-center justify-center mb-16">
+        <TransitionEffect />
         <div className="w-full h-full inline-block z-0 px-32 sc-sm:px-10 sc-md:px-16 sc-lg:px-32 pt-16 containerResponsive">
-          <AnimatedText text="Passion Fuel Purpose!" styles="mb-16 text-7xl sc-lg:text-7xl sc-sm:text-6xl 
-          sc-xs:text-4xl sc-sm:mb-8" />
+          <AnimatedText
+            text="Passion Fuel Purpose!"
+            styles="mb-16 text-7xl sc-lg:text-7xl sc-sm:text-6xl 
+          sc-xs:text-4xl sc-sm:mb-8"
+          />
           <div className="grid w-full grid-cols-8 gap-16 sc-sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start sc-xl:col-span-4 sc-md:order-2 sc-md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 darkModeText">
@@ -49,8 +54,10 @@ export default function about() {
                 digital transformation.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl p-8 imgBorderLight imgBorderDark 
-            sc-xl:col-span-4 sc-md:order-1 sc-md:col-span-8">
+            <div
+              className="col-span-3 relative h-max rounded-2xl p-8 imgBorderLight imgBorderDark 
+            sc-xl:col-span-4 sc-md:order-1 sc-md:col-span-8"
+            >
               <div className="">
                 <Image
                   src={"/bgphoto.png"}
@@ -63,14 +70,18 @@ export default function about() {
                 />
               </div>
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between sc-xl:col-span-8 
-            sc-xl:flex-row sc-xl:items-center sc-md:order-3">
+            <div
+              className="col-span-2 flex flex-col items-end justify-between sc-xl:col-span-8 
+            sc-xl:flex-row sc-xl:items-center sc-md:order-3"
+            >
               <div className="flex flex-col items-end justify-center sc-xl:items-center">
                 <span className="inline-block text-7xl font-bold sc-md:text-6xl sc-sm:text-5xl sc-xs:text-4xl">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm"
+                >
                   Satisfied Clients
                 </h2>
               </div>
@@ -78,8 +89,10 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold sc-md:text-6xl sc-sm:text-5xl sc-xs:text-4xl">
                   <AnimatedNumbers value={30} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm"
+                >
                   Projects Completed
                 </h2>
               </div>
@@ -87,8 +100,10 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold sc-md:text-6xl sc-sm:text-5xl sc-xs:text-4xl">
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                sc-xl:text-center sc-md:text-lg sc-sm:text-base sc-xs:text-sm"
+                >
                   Years of Experience
                 </h2>
               </div>

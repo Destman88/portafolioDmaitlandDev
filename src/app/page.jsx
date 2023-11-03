@@ -6,10 +6,12 @@ import photo from "../../public/profile.jpg";
 import Link from "next/link";
 import { FaRegFilePdf, FaEnvelopeOpenText } from "react-icons/fa6";
 import Footer from "@/components/Footer";
+import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
   return (
     <main className="flex-col items-center w-full h-full">
+      <TransitionEffect />
       <ParticlesContainer />
       <div className="w-full h-full inline-block z-0 px-32 sc-sm:px-10 sc-md:px-16 sc-lg:px-32 containerResponsive pt-8 sc-md:pt-16 sc-sm:pt-8 ">
         <div className="flex items-center justify-between w-full sc-lg:flex-col">
@@ -74,7 +76,7 @@ export default function Home() {
         </div>
       </footer>
       <div className="hidden sc-md:block">
-        <Footer/>
+        <Footer />
       </div>
     </main>
   );

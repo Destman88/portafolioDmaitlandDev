@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         </Script>
         <Navbar />
         {children}
-        <ScrollToTop/>
+        <ScrollToTop />
       </body>
     </html>
   );
